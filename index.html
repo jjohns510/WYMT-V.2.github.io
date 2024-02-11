@@ -1,0 +1,68 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<title>What You Made Today!</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>What You Made Today!</h1>
+  <div class="categories">
+    <!-- Category HSD -->
+    <div class="category-card">
+      <div class="category-name">HSD </div>
+      <button class="change-button" onclick="updateCounter('hsd', 1)">+</button>
+      <div id="hsd-counter" class="counter">0</div>
+      <button class="change-button" onclick="updateCounter('hsd', -1)">-</button>
+    </div>
+
+    <!-- Category VID -->
+    <div class="category-card">
+      <div class="category-name">VID </div>
+      <button class="change-button" onclick="updateCounter('vid', 1)">+</button>
+      <div id="vid-counter" class="counter">0</div>
+      <button class="change-button" onclick="updateCounter('vid', -1)">-</button>
+    </div>
+
+    <!-- Category XM -->
+    <div class="category-card">
+      <div class="category-name">XM </div>
+      <button class="change-button" onclick="updateCounter('xm', 1)">+</button>
+      <div id="xm-counter" class="counter">0</div>
+      <button class="change-button" onclick="updateCounter('xm', -1)">-</button>
+    </div>
+
+    <!-- Category XFI -->
+    <div class="category-card">
+      <div class="category-name">XFI </div>
+      <button class="change-button" onclick="updateCounter('xfi', 1)">+</button>
+      <div id="xfi-counter" class="counter">0</div>
+      <button class="change-button" onclick="updateCounter('xfi', -1)">-</button>
+    </div>
+
+    <!-- Category SRW -->
+    <div class="category-card">
+      <div class="category-name">SRW </div>
+      <button class="change-button" onclick="updateCounter('srw', 1)">+</button>
+      <div id="srw-counter" class="counter">0</div>
+      <button class="change-button" onclick="updateCounter('srw', -1)">-</button>
+    </div>
+  </div>
+  
+  <div class="total-display">
+    Total: $<span id="total-amount">0</span>
+    <canvas id="sales-chart"></canvas>
+  </div>
+  <button id="reset-button" onclick="resetCounters()">Reset</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

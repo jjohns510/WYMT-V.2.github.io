@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', Medium-500;
+  background-color: #6138F6;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: white;
+   padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.category-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.change-button {
+  background-color: #28a745;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  color: white;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.counter {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.total-display {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1.5em;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+#reset-button {
+  background-color: #dc3545;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Additional styling for responsiveness and aesthetics may be required */
+#sales-chart {
+  max-width: auto; /* Adjust this value to set the desired width */
+  height: auto; /* This will maintain the aspect ratio */
+  margin: auto; /* Centers the chart if the container is wider */
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+.counter-animated {
+  animation: pop 0.5s ease;
+}
+.change-button:active {
+  transform: scale(0.9);
+}
