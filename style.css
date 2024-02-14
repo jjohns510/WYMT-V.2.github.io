@@ -28,7 +28,7 @@ h1 {
   background-color: white;
    padding: 10px 20px;
   border-radius: 10px;
-  border: 2px solid #000000;
+  border: 2px solid #0D0D0F;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 20px;
   padding: 20px;
@@ -41,7 +41,7 @@ h1 {
 
 .change-button {
   background-color: #008558;
-  border: 2px solid #000000;
+  border: 2px solid #0D0D0F;
   border-radius: 50px;
   color: white;
   padding: 10px;
@@ -61,7 +61,7 @@ h1 {
   font-size: 1.5em;
   margin: 20px 0;
   padding: 10px;
-  border: 2px solid #000000;
+  border: 2px solid #0D0D0F;
   border-radius: 10px;
 }
 
@@ -74,11 +74,11 @@ h1 {
   cursor: pointer;
 }
 
-/* Additional styling for responsiveness and aesthetics may be required */
+
 #sales-chart {
-  max-width: auto; /* Adjust this value to set the desired width */
-  height: auto; /* This will maintain the aspect ratio */
-  margin: auto; /* Centers the chart if the container is wider */
+  max-width: auto; 
+  height: auto;
+  margin: auto;
 }
 @keyframes pop {
   0% { transform: scale(1); }
